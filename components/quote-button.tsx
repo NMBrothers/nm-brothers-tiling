@@ -14,7 +14,7 @@ export default function QuoteButton({
   variant = "light",
 }: QuoteButtonProps) {
   const baseClasses =
-    "rounded-full px-8 py-4 text-lg font-medium h-14 min-h-14";
+    "rounded-full px-7 py-3 text-lg font-medium h-12 min-h-12 cursor-pointer";
   const variantClasses =
     variant === "light"
       ? "bg-white text-gray-900 hover:bg-gray-100"
