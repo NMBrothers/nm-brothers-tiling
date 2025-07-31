@@ -31,6 +31,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import QuoteButton from "@/components/quote-button";
 
 interface NavItem {
   href: string;
@@ -162,15 +163,13 @@ export default function MobileMenu({
                 {/* CTA Button */}
                 {ctaButton && (
                   <div className="px-3 py-4">
-                    <Button
-                      className="w-full bg-white text-gray-900 hover:bg-gray-100 rounded-full py-3"
+                    <QuoteButton
+                      className="w-full"
                       onClick={() => {
                         ctaButton.onClick?.();
                         closeMenu();
                       }}
-                    >
-                      {ctaButton.text}
-                    </Button>
+                    />
                   </div>
                 )}
               </div>

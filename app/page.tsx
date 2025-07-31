@@ -18,6 +18,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "@/components/mobile-menu";
+import QuoteButton from "@/components/quote-button";
 
 export default function HomePage() {
   return (
@@ -69,9 +70,7 @@ export default function HomePage() {
                 Contact
               </Link>
 
-              <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-6">
-                Get a quote →
-              </Button>
+              <QuoteButton />
             </nav>
 
             {/* Mobile Menu */}
@@ -129,9 +128,7 @@ export default function HomePage() {
               of experience bringing quality craftsmanship to South African
               homes.
             </p>
-            <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg">
-              Get a quote →
-            </Button>
+            <QuoteButton />
           </div>
         </section>
 
