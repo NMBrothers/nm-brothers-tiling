@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -13,15 +14,12 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-  Menu,
-  X,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import MobileMenu from "@/components/mobile-menu";
 
 export default function HomePage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
@@ -70,83 +68,33 @@ export default function HomePage() {
               >
                 Contact
               </Link>
-              <div className="flex items-center gap-3 ml-4">
-                <Facebook className="h-4 w-4 hover:text-blue-400 cursor-pointer transition-colors" />
-                <Instagram className="h-4 w-4 hover:text-blue-400 cursor-pointer transition-colors" />
-                <Linkedin className="h-4 w-4 hover:text-blue-400 cursor-pointer transition-colors" />
-                <Twitter className="h-4 w-4 hover:text-blue-400 cursor-pointer transition-colors" />
-              </div>
+
               <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-6">
                 Get a quote →
               </Button>
             </nav>
 
-            {/* Mobile menu button */}
-            <button
-              className="lg:hidden p-2"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </button>
+            {/* Mobile Menu */}
+            <MobileMenu
+              logoComponent={
+                <div className="flex items-center">
+                  <div className="h-6 w-6 bg-white rounded-sm flex items-center justify-center">
+                    <div className="h-3 w-3 bg-gray-900 rounded-sm"></div>
+                  </div>
+                  <span className="ml-2 text-sm font-medium">
+                    N&M Brothers Tiling
+                  </span>
+                </div>
+              }
+              ctaButton={{
+                text: "Get a quote →",
+                onClick: () => {
+                  // Add your CTA logic here
+                  console.log("CTA clicked");
+                },
+              }}
+            />
           </div>
-
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
-            <div className="lg:hidden border-t border-gray-700">
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                <Link
-                  className="block px-3 py-2 text-base font-medium hover:text-blue-400 transition-colors"
-                  href="#home"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Home
-                </Link>
-                <Link
-                  className="block px-3 py-2 text-base font-medium hover:text-blue-400 transition-colors"
-                  href="#about"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  About
-                </Link>
-                <Link
-                  className="block px-3 py-2 text-base font-medium hover:text-blue-400 transition-colors"
-                  href="#services"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Services
-                </Link>
-                <Link
-                  className="block px-3 py-2 text-base font-medium hover:text-blue-400 transition-colors"
-                  href="#gallery"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Gallery
-                </Link>
-                <Link
-                  className="block px-3 py-2 text-base font-medium hover:text-blue-400 transition-colors"
-                  href="#contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Contact
-                </Link>
-                <div className="flex items-center gap-4 px-3 py-2">
-                  <Facebook className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
-                  <Instagram className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
-                  <Linkedin className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
-                  <Twitter className="h-5 w-5 hover:text-blue-400 cursor-pointer transition-colors" />
-                </div>
-                <div className="px-3 py-2">
-                  <Button className="w-full bg-white text-gray-900 hover:bg-gray-100 rounded-full">
-                    Get a quote →
-                  </Button>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </header>
 
