@@ -106,7 +106,7 @@ export default function HomePage() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=1080&width=1920"
+              src="/kitchen.jpg"
               alt="Modern luxury kitchen with expert tiling work"
               fill
               className="object-cover"
