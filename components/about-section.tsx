@@ -53,10 +53,6 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-
-            <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-8 py-3 text-lg font-medium h-12">
-              Learn more →
-            </Button>
           </div>
         </div>
       </div>

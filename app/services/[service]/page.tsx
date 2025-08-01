@@ -178,7 +178,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               href="/#gallery"
               className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
             >
-              View Our {service.title} Work
+              View More Works
             </Link>
           </div>
         </div>
