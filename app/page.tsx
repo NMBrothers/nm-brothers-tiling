@@ -19,6 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "@/components/mobile-menu";
 import QuoteButton from "@/components/quote-button";
+import Logo from "@/components/logo";
 
 export default function HomePage() {
   return (
@@ -28,14 +29,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link className="flex items-center" href="#">
-              <div className="h-6 w-6 md:h-8 md:w-8 bg-white rounded-sm flex items-center justify-center">
-                <div className="h-3 w-3 md:h-4 md:w-4 bg-gray-900 rounded-sm"></div>
-              </div>
-              <span className="ml-2 md:ml-3 text-sm md:text-lg font-medium">
-                N&M BROTHERS TILING
-              </span>
-            </Link>
+            <Logo href="#" textClassName="text-white" />
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
@@ -76,14 +70,7 @@ export default function HomePage() {
             {/* Mobile Menu */}
             <MobileMenu
               logoComponent={
-                <div className="flex items-center">
-                  <div className="h-6 w-6 bg-white rounded-sm flex items-center justify-center">
-                    <div className="h-3 w-3 bg-gray-900 rounded-sm"></div>
-                  </div>
-                  <span className="ml-2 text-sm font-medium">
-                    N&M Brothers Tiling
-                  </span>
-                </div>
+                <Logo href="#" textClassName="text-white" showText={true} />
               }
               ctaButton={{
                 text: "Get a quote →",
@@ -547,12 +534,12 @@ export default function HomePage() {
       <footer className="bg-gray-900 text-white py-8 md:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center mb-4 md:mb-0">
-              <div className="h-8 w-8 bg-white rounded-sm flex items-center justify-center mr-3">
-                <div className="h-4 w-4 bg-gray-900 rounded-sm"></div>
-              </div>
-              <span className="text-lg font-medium">N&M Brothers Tiling</span>
-            </div>
+            <Logo
+              href="#"
+              textClassName="text-white text-lg font-medium"
+              imageClassName="h-8 w-8 mr-3"
+              className="mb-4 md:mb-0"
+            />
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
               <div className="flex gap-4 sm:gap-6">
                 <Link
