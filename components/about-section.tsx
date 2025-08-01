@@ -38,7 +38,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
               <div>
                 <div className="text-3xl sm:text-4xl md:text-5xl font-light text-blue-400 mb-2">
-                  50+
+                  25+
                 </div>
                 <div className="text-sm sm:text-base text-gray-400">
                   Happy Clients
