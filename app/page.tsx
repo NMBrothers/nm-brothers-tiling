@@ -111,7 +111,7 @@ export default function HomePage() {
               <span className="sm:hidden"> </span>for your home
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-200 max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed">
-              Transform your space with premium tile installation. Over 15 years
+              Transform your space with premium tile installation. Over 10 years
               of experience bringing quality craftsmanship to South African
               homes.
             </p>
@@ -255,7 +255,7 @@ export default function HomePage() {
                 </h2>
                 <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-6 md:mb-8">
                   Founded by brothers, N&M Brothers Tiling has been transforming
-                  South African homes since 2008. Our commitment to quality
+                  South African homes for years. Our commitment to quality
                   craftsmanship and customer satisfaction has made us the
                   trusted choice for homeowners across the region.
                 </p>
@@ -268,7 +268,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
                   <div>
                     <div className="text-3xl sm:text-4xl md:text-5xl font-light text-blue-400 mb-2">
-                      500+
+                      50+
                     </div>
                     <div className="text-sm sm:text-base text-gray-400">
                       Happy Clients
@@ -276,7 +276,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="text-3xl sm:text-4xl md:text-5xl font-light text-blue-400 mb-2">
-                      15+
+                      10+
                     </div>
                     <div className="text-sm sm:text-base text-gray-400">
                       Years Experience
