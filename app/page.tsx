@@ -309,7 +309,7 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="/works/bathroom.webp"
                     alt="Modern bathroom renovation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -317,7 +317,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/works/kitchen.webp"
                     alt="Kitchen backsplash installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -328,7 +328,7 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/works/bathroom2.webp"
                     alt="Living room floor tiling"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -336,7 +336,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="/works/bathroom3.webp"
                     alt="Outdoor patio tiling"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -347,7 +347,7 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="/works/shower.webp"
                     alt="Luxury bathroom renovation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -355,7 +355,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/works/bathroom4.webp"
                     alt="Shower renovation with mosaic tiles"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
