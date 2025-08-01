@@ -29,7 +29,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import QuoteButton from "@/components/quote-button";
 
@@ -149,16 +149,6 @@ export default function MobileMenu({
                     {item.label}
                   </Link>
                 ))}
-
-                {/* Social Icons */}
-                {showSocialIcons && (
-                  <div className="flex items-center justify-center gap-6 py-6">
-                    <Facebook className="h-6 w-6 hover:text-blue-400 cursor-pointer transition-colors" />
-                    <Instagram className="h-6 w-6 hover:text-blue-400 cursor-pointer transition-colors" />
-                    <Linkedin className="h-6 w-6 hover:text-blue-400 cursor-pointer transition-colors" />
-                    <Twitter className="h-6 w-6 hover:text-blue-400 cursor-pointer transition-colors" />
-                  </div>
-                )}
 
                 {/* CTA Button */}
                 {ctaButton && (
