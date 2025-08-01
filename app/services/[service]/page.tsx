@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import QuoteButton from "@/components/quote-button";
 
 // Service data mapping
 const serviceData = {
@@ -44,7 +45,7 @@ const serviceData = {
       "Slip-resistant options",
       "Long-lasting durability",
     ],
-    heroImage: "/works/bathroom2.webp",
+    heroImage: "/works/floor2.webp",
   },
 };
 
@@ -62,7 +63,7 @@ export default function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50">
       {/* Back Navigation */}
       <div className="bg-white border-b">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-4">
@@ -104,11 +105,8 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
 
               {/* CTA Button */}
-              <Link
-                href="/#contact"
-                className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
-              >
-                Get Free Quote
+              <Link href="/#contact">
+                <QuoteButton variant="dark" size="large" />
               </Link>
             </div>
 
@@ -143,11 +141,8 @@ export default function ServicePage({ params }: ServicePageProps) {
               ensures results that exceed expectations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/#contact"
-                className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Contact Us Today
+              <Link href="/#contact">
+                <QuoteButton variant="dark" />
               </Link>
               <Link
                 href="/#gallery"

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import FloatingActionButtons from "@/components/floating-action-buttons";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,7 +28,14 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body>
+        <div className="flex flex-col min-h-screen bg-white">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <FloatingActionButtons />
+        </div>
+      </body>
     </html>
   );
 }
