@@ -40,31 +40,31 @@ export default function HomePage() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <Link
-                className="text-sm font-medium hover:text-blue-400 transition-colors"
+                className="text-base font-medium hover:text-blue-400 transition-colors"
                 href="#home"
               >
                 Home
               </Link>
               <Link
-                className="text-sm font-medium hover:text-blue-400 transition-colors"
+                className="text-base font-medium hover:text-blue-400 transition-colors"
                 href="#about"
               >
                 About
               </Link>
               <Link
-                className="text-sm font-medium hover:text-blue-400 transition-colors"
+                className="text-base font-medium hover:text-blue-400 transition-colors"
                 href="#services"
               >
                 Services
               </Link>
               <Link
-                className="text-sm font-medium hover:text-blue-400 transition-colors"
+                className="text-base font-medium hover:text-blue-400 transition-colors"
                 href="#gallery"
               >
                 Gallery
               </Link>
               <Link
-                className="text-sm font-medium hover:text-blue-400 transition-colors"
+                className="text-base font-medium hover:text-blue-400 transition-colors"
                 href="#contact"
               >
                 Contact
@@ -513,9 +513,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="pt-8">
-                    <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-8 py-3">
-                      Get a quote
-                    </Button>
+                    <QuoteButton size="large" />
                   </div>
                 </form>
 

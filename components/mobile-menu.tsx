@@ -113,12 +113,12 @@ export default function MobileMenu({
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden animate-in fade-in duration-300"
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
             onClick={closeMenu}
           />
 
           {/* Mobile Menu */}
-          <div className="fixed top-0 left-0 right-0 bg-gray-900 text-white z-50 lg:hidden animate-in slide-in-from-top duration-300">
+          <div className="fixed top-0 left-0 right-0 bg-gray-900 text-white z-50 lg:hidden">
             <div className="container mx-auto px-4 sm:px-6">
               {/* Header in menu */}
               <div className="flex items-center justify-between h-16">
