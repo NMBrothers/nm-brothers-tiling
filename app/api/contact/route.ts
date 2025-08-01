@@ -106,52 +106,6 @@ ${validatedData.message}
 This email was sent from the contact form on NM Brothers Tiling website.
     `;
 
-    // Confirmation email to the user
-    const userEmailHTML = `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #333;">Thank you for contacting NM Brothers Tiling</h2>
-        <hr style="border: 1px solid #ddd;">
-        
-        <p>Hello ${validatedData.name},</p>
-        
-        <p>We've received your message and will get back to you within 24 hours.</p>
-        
-        <h3 style="color: #555;">Your Message:</h3>
-        <p style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">
-          ${validatedData.message.replace(/\n/g, "<br>")}
-        </p>
-        
-        <p>If you have any urgent inquiries, please call us at <strong>+27 67 737 2646</strong>.</p>
-        
-        <p>Best regards,<br>
-        NM Brothers Tiling Team</p>
-        
-        <hr style="border: 1px solid #ddd;">
-        <p style="color: #999; font-size: 12px;">
-          This is an automated confirmation email. Please do not reply to this email.
-        </p>
-      </div>
-    `;
-
-    const userEmailText = `
-Thank you for contacting NM Brothers Tiling
-
-Hello ${validatedData.name},
-
-We've received your message and will get back to you within 24 hours.
-
-Your Message:
-${validatedData.message}
-
-If you have any urgent inquiries, please call us at +27 67 737 2646.
-
-Best regards,
-NM Brothers Tiling Team
-
----
-This is an automated confirmation email. Please do not reply to this email.
-    `;
-
     // Send email to business
     await transporter.sendMail({
       from: process.env.EMAIL_FROM,
@@ -162,20 +116,11 @@ This is an automated confirmation email. Please do not reply to this email.
       replyTo: validatedData.email,
     });
 
-    // Send confirmation email to user
-    await transporter.sendMail({
-      from: process.env.EMAIL_FROM,
-      to: validatedData.email,
-      subject: "Thank you for contacting NM Brothers Tiling",
-      text: userEmailText,
-      html: userEmailHTML,
-    });
-
     return NextResponse.json(
       {
         success: true,
         message:
-          "Your message has been sent successfully! We'll get back to you soon.",
+          "Thank you! We've received your message and will contact you within 24 hours. For urgent matters, call us at +27 67 737 2646.",
       },
       { status: 200 }
     );

@@ -82,9 +82,9 @@ pnpm install
 
 4. Submit the form
 
-5. Check both email addresses:
-   - The `EMAIL_TO` address should receive the form submission
-   - The email you entered in the form should receive a confirmation
+5. Check your business email:
+   - The `EMAIL_TO` address should receive the form submission with all the details
+   - Users will see a success message on the website (no confirmation email is sent)
 
 ## Troubleshooting
 

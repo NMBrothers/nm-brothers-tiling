@@ -30,7 +30,7 @@ export default function TestimonialsSection() {
                 recommended!"
               </p>
               <div>
-                <p className="font-medium text-gray-900">Sarah Johnson</p>
+                <p className="font-medium text-gray-900">Person Name</p>
                 <p className="text-sm text-gray-500">Cape Town</p>
               </div>
             </CardContent>
@@ -52,10 +52,8 @@ export default function TestimonialsSection() {
                 rand!"
               </p>
               <div>
-                <p className="font-medium text-gray-900">
-                  Michael van der Merwe
-                </p>
-                <p className="text-sm text-gray-500">Johannesburg</p>
+                <p className="font-medium text-gray-900">Person Name</p>
+                <p className="text-sm text-gray-500">Cape Town</p>
               </div>
             </CardContent>
           </Card>
@@ -75,8 +73,8 @@ export default function TestimonialsSection() {
                 floor tiles look amazing and the workmanship is top quality."
               </p>
               <div>
-                <p className="font-medium text-gray-900">Priya Patel</p>
-                <p className="text-sm text-gray-500">Durban</p>
+                <p className="font-medium text-gray-900">Person Name</p>
+                <p className="text-sm text-gray-500">Cape Town</p>
               </div>
             </CardContent>
           </Card>

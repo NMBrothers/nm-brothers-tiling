@@ -50,9 +50,9 @@ Where I want to receive form submissions: [your-business-email@example.com]
 
 When someone fills out your contact form:
 
-1. They'll receive a confirmation email saying "Thanks for contacting us"
-2. You'll receive their message with all their details
-3. You can reply directly from your email
+1. They'll see a success message on your website
+2. You'll receive their message with all their details in your email
+3. You can reply directly from your email to their email address
 
 ## Frequently Asked Questions
 

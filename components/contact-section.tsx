@@ -214,7 +214,7 @@ export default function ContactSection() {
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-blue-400" />
                   <span className="text-gray-300">
-                    info@nmbrotherstiling.com
+                    nmbrotherstiling@gmail.com
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
