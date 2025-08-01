@@ -32,7 +32,7 @@ const Logo: React.FC<LogoProps> = ({
         <span
           className={`ml-2 md:ml-3 text-sm md:text-lg font-medium ${textClassName}`}
         >
-          N&M BROTHERS TILING
+          N&M BROTHERS TILERS
         </span>
       )}
     </div>

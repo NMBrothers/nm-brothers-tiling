@@ -8,9 +8,9 @@ import FloatingActionButtons from "@/components/floating-action-buttons";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "N&M Brothers Tiling",
-  description: "N&M Brothers Tiling",
-  generator: "N&M Brothers Tiling",
+  title: "N&M Brothers Tilers",
+  description: "N&M Brothers Tilers",
+  generator: "N&M Brothers Tilers",
 };
 
 const protectedRoutes = [

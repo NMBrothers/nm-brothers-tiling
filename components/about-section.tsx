@@ -24,7 +24,7 @@ export default function AboutSection() {
               About our service
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-6 md:mb-8">
-              Founded by brothers, N&M Brothers Tiling has been transforming
+              Founded by brothers, N&M Brothers Tilers has been transforming
               South African homes for years. Our commitment to quality
               craftsmanship and customer satisfaction has made us the trusted
               choice for homeowners across the region.
