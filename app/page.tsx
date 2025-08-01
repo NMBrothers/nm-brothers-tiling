@@ -20,6 +20,7 @@ import Link from "next/link";
 import MobileMenu from "@/components/mobile-menu";
 import QuoteButton from "@/components/quote-button";
 import Logo from "@/components/logo";
+import FloatingActionButtons from "@/components/floating-action-buttons";
 
 export default function HomePage() {
   return (
@@ -570,6 +571,9 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Action Buttons */}
+      <FloatingActionButtons />
     </div>
   );
 }
