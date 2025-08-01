@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Bath, ChefHat, Grid3x3 } from "lucide-react";
 import Link from "next/link";
 
 export default function ServicesSection() {
@@ -13,10 +13,10 @@ export default function ServicesSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 md:items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 lg:gap-20 md:items-stretch">
           <div className="space-y-8 flex flex-col h-full">
             <Link href="/services/bathroom-tiling" className="flex-1">
-              <div className="group relative cursor-pointer p-8 overflow-visible bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
+              <div className="group relative cursor-pointer p-12 md:p-16 overflow-visible bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
                 {/* Grid Pattern Overlay */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <div
@@ -37,17 +37,20 @@ export default function ServicesSection() {
 
                 <div className="relative z-10">
                   <div>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
+                    <div className="mb-6">
+                      <Bath className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Bathroom Tiling
                     </h3>
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
                       Complete bathroom renovations with waterproof tiling
                       solutions. Modern designs and premium finishes that stand
                       the test of time.
                     </p>
-                    <div className="text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-1">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
                       Learn More
-                      <ArrowUpRight className="h-4 w-4" />
+                      <ArrowUpRight className="h-5 w-5" />
                     </div>
                   </div>
                 </div>
@@ -57,7 +60,7 @@ export default function ServicesSection() {
 
           <div className="space-y-8 flex flex-col h-full">
             <Link href="/services/kitchen-tiling" className="flex-1">
-              <div className="group relative cursor-pointer p-8 overflow-visible bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
+              <div className="group relative cursor-pointer p-12 md:p-16 overflow-visible bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
                 {/* Grid Pattern Overlay */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <div
@@ -78,17 +81,20 @@ export default function ServicesSection() {
 
                 <div className="relative z-10">
                   <div>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
+                    <div className="mb-6">
+                      <ChefHat className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Kitchen Tiling
                     </h3>
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
                       Stylish backsplashes and countertops that combine
                       functionality with beautiful aesthetics for your dream
                       kitchen.
                     </p>
-                    <div className="text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-1">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
                       Learn More
-                      <ArrowUpRight className="h-4 w-4" />
+                      <ArrowUpRight className="h-5 w-5" />
                     </div>
                   </div>
                 </div>
@@ -98,7 +104,7 @@ export default function ServicesSection() {
 
           <div className="space-y-8 flex flex-col h-full">
             <Link href="/services/floor-tiling" className="flex-1">
-              <div className="group relative cursor-pointer p-8 overflow-visible bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
+              <div className="group relative cursor-pointer p-12 md:p-16 overflow-visible bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-300 hover:-translate-y-1 hover:bg-blue-50/30 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2 h-full flex flex-col">
                 {/* Grid Pattern Overlay */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <div
@@ -119,16 +125,19 @@ export default function ServicesSection() {
 
                 <div className="relative z-10">
                   <div>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
+                    <div className="mb-6">
+                      <Grid3x3 className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Floor Tiling
                     </h3>
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
                       Durable and elegant floor installations for living spaces,
                       bedrooms, and outdoor areas with precision craftsmanship.
                     </p>
-                    <div className="text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-1">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
                       Learn More
-                      <ArrowUpRight className="h-4 w-4" />
+                      <ArrowUpRight className="h-5 w-5" />
                     </div>
                   </div>
                 </div>

@@ -30,12 +30,6 @@ export default function Footer() {
                 Terms of Service
               </Link>
             </div>
-            <div className="flex items-center gap-3">
-              <Facebook className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Instagram className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Linkedin className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              <Twitter className="h-4 w-4 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-            </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
