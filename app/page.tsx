@@ -33,7 +33,7 @@ export default function HomePage() {
                 <div className="h-3 w-3 md:h-4 md:w-4 bg-gray-900 rounded-sm"></div>
               </div>
               <span className="ml-2 md:ml-3 text-sm md:text-lg font-medium">
-                N&M Brothers Tiling
+                N&M BROTHERS TILING
               </span>
             </Link>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
 
           {/* Content */}
           <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight mb-6 md:mb-8">
+            <h1 className="text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight mb-6 md:mb-8">
               Expert tiling services
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>for your home
@@ -466,7 +466,7 @@ export default function HomePage() {
             {/* Image Side */}
             <div className="relative h-64 sm:h-80 lg:h-auto order-2 lg:order-1">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/contact.png"
                 alt="Tiling consultation and planning"
                 fill
                 className="object-cover"
