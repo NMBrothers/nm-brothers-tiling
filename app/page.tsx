@@ -65,7 +65,13 @@ export default function HomePage() {
                 Contact
               </Link>
 
-              <QuoteButton />
+              <QuoteButton
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              />
             </nav>
 
             {/* Mobile Menu */}
@@ -116,7 +122,14 @@ export default function HomePage() {
               of experience bringing quality craftsmanship to South African
               homes.
             </p>
-            <QuoteButton size="large" />
+            <QuoteButton
+              size="large"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            />
           </div>
         </section>
 
@@ -297,7 +310,7 @@ export default function HomePage() {
         <section id="gallery" className="py-16 md:py-24 lg:py-32 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 mb-4 md:mb-6">
+              <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light mb-6 md:mb-8 leading-tight">
                 Our recent work
               </h2>
               <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
@@ -371,7 +384,7 @@ export default function HomePage() {
         <section className="py-16 md:py-24 lg:py-32 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 mb-4 md:mb-6">
+              <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light mb-6 md:mb-8 leading-tight">
                 What our clients say
               </h2>
             </div>
@@ -464,7 +477,7 @@ export default function HomePage() {
             {/* Form Side */}
             <div className="bg-gray-900 text-white p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col justify-center order-1 lg:order-2">
               <div className="max-w-lg">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light mb-4 md:mb-6 leading-tight">
+                <h2 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light mb-6 md:mb-8 leading-tight">
                   Fill the form to receive a call
                 </h2>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8 md:mb-12">
@@ -500,8 +513,17 @@ export default function HomePage() {
                     />
                   </div>
 
-                  <div className="pt-8">
-                    <QuoteButton size="large" />
+                  <div className="pt-8 flex justify-center">
+                    <button
+                      type="submit"
+                      className="w-full max-w-xs px-10 py-4 text-xl font-medium h-16 min-h-16 rounded-full bg-white text-gray-900 hover:bg-gray-100 transition-colors"
+                      onClick={() => {
+                        console.log("Contact form submitted");
+                        // TODO: Add actual form submission logic here
+                      }}
+                    >
+                      Get a quote →
+                    </button>
                   </div>
                 </form>
 
@@ -509,7 +531,7 @@ export default function HomePage() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <Phone className="h-5 w-5 text-blue-400" />
-                      <span className="text-gray-300">+27 11 123 4567</span>
+                      <span className="text-gray-300">+27 67 737 2646</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Mail className="h-5 w-5 text-blue-400" />
@@ -520,7 +542,7 @@ export default function HomePage() {
                     <div className="flex items-center gap-3">
                       <MapPin className="h-5 w-5 text-blue-400" />
                       <span className="text-gray-300">
-                        Serving Gauteng, Western Cape & KwaZulu-Natal
+                        Serving Western Cape
                       </span>
                     </div>
                   </div>
