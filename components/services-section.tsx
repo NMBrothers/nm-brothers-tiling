@@ -35,20 +35,20 @@ export default function ServicesSection() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 border-l-2 border-t-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
                 <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
 
-                <div className="relative z-10">
-                  <div>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex flex-col h-full">
                     <div className="mb-6">
                       <Bath className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
                     </div>
                     <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Bathroom Tiling
                     </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8 flex-grow">
                       Complete bathroom renovations with waterproof tiling
                       solutions. Modern designs and premium finishes that stand
                       the test of time.
                     </p>
-                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2">
                       Learn More
                       <ArrowUpRight className="h-5 w-5" />
                     </div>
@@ -79,20 +79,20 @@ export default function ServicesSection() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 border-l-2 border-t-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
                 <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
 
-                <div className="relative z-10">
-                  <div>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex flex-col h-full">
                     <div className="mb-6">
                       <ChefHat className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
                     </div>
                     <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Kitchen Tiling
                     </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8 flex-grow">
                       Stylish backsplashes and countertops that combine
                       functionality with beautiful aesthetics for your dream
                       kitchen.
                     </p>
-                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2">
                       Learn More
                       <ArrowUpRight className="h-5 w-5" />
                     </div>
@@ -123,19 +123,19 @@ export default function ServicesSection() {
                 <div className="absolute -top-4 -left-4 w-12 h-12 border-l-2 border-t-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
                 <div className="absolute -bottom-4 -right-4 w-12 h-12 border-r-2 border-b-2 border-blue-400 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:w-16 group-hover:h-16"></div>
 
-                <div className="relative z-10">
-                  <div>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex flex-col h-full">
                     <div className="mb-6">
                       <Grid3x3 className="h-12 w-12 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
                     </div>
                     <h3 className="text-2xl md:text-3xl font-medium text-gray-900 mb-6 group-hover:text-blue-900 transition-colors duration-300">
                       Floor Tiling
                     </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8">
+                    <p className="text-lg text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-8 flex-grow">
                       Durable and elegant floor installations for living spaces,
                       bedrooms, and outdoor areas with precision craftsmanship.
                     </p>
-                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2 mt-auto">
+                    <div className="text-lg text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-300 flex items-center gap-2">
                       Learn More
                       <ArrowUpRight className="h-5 w-5" />
                     </div>
