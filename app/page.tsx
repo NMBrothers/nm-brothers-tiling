@@ -128,7 +128,7 @@ export default function HomePage() {
               of experience bringing quality craftsmanship to South African
               homes.
             </p>
-            <QuoteButton />
+            <QuoteButton size="large" />
           </div>
         </section>
 
@@ -253,7 +253,7 @@ export default function HomePage() {
             {/* Image Side */}
             <div className="relative h-64 sm:h-80 lg:h-auto">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/tiles.png"
                 alt="Modern bathroom renovation with expert tiling"
                 fill
                 className="object-cover"
@@ -267,11 +267,10 @@ export default function HomePage() {
                   About our service
                 </h2>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8">
-                  Founded by brothers Nathan and Michael, N&M Brothers Tiling
-                  has been transforming South African homes since 2008. Our
-                  commitment to quality craftsmanship and customer satisfaction
-                  has made us the trusted choice for homeowners across the
-                  region.
+                  Founded by brothers, N&M Brothers Tiling has been transforming
+                  South African homes since 2008. Our commitment to quality
+                  craftsmanship and customer satisfaction has made us the
+                  trusted choice for homeowners across the region.
                 </p>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8 md:mb-12">
                   We specialize in premium tile installation, creating
@@ -515,7 +514,7 @@ export default function HomePage() {
 
                   <div className="pt-8">
                     <Button className="bg-white text-gray-900 hover:bg-gray-100 rounded-full px-8 py-3">
-                      Get more information →
+                      Get a quote
                     </Button>
                   </div>
                 </form>
