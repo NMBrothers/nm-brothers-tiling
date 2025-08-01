@@ -50,13 +50,14 @@ const serviceData = {
 };
 
 interface ServicePageProps {
-  params: {
+  params: Promise<{
     service: string;
-  };
+  }>;
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const service = serviceData[params.service as keyof typeof serviceData];
+export default async function ServicePage({ params }: ServicePageProps) {
+  const { service: serviceSlug } = await params;
+  const service = serviceData[serviceSlug as keyof typeof serviceData];
 
   if (!service) {
     notFound();
@@ -127,30 +128,58 @@ export default function ServicePage({ params }: ServicePageProps) {
         </div>
       </section>
 
-      {/* Additional Content Section */}
+      {/* Process Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Professional {service.title} Services
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Our {service.title} Process
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              At NM Brothers Tiling, we bring years of expertise and attention
-              to detail to every {service.title.toLowerCase()} project. Our
-              commitment to quality craftsmanship and customer satisfaction
-              ensures results that exceed expectations.
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              From consultation to completion, we ensure every step meets our
+              high standards
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#contact">
-                <QuoteButton variant="dark" />
-              </Link>
-              <Link
-                href="/#gallery"
-                className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
-              >
-                View Our Work
-              </Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">1</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Consultation</h3>
+              <p className="text-gray-600">
+                We assess your space and discuss your vision
+              </p>
             </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">2</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Design & Quote
+              </h3>
+              <p className="text-gray-600">
+                Detailed plan with transparent pricing
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">3</span>
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Installation</h3>
+              <p className="text-gray-600">
+                Professional installation with attention to detail
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/#gallery"
+              className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+            >
+              View Our {service.title} Work
+            </Link>
           </div>
         </div>
       </section>
@@ -168,8 +197,9 @@ export function generateStaticParams() {
 }
 
 // Generate metadata for each service page
-export function generateMetadata({ params }: ServicePageProps) {
-  const service = serviceData[params.service as keyof typeof serviceData];
+export async function generateMetadata({ params }: ServicePageProps) {
+  const { service: serviceSlug } = await params;
+  const service = serviceData[serviceSlug as keyof typeof serviceData];
 
   if (!service) {
     return {
