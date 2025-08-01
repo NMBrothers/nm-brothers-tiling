@@ -318,7 +318,7 @@ export default function HomePage() {
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
                     src="/works/kitchen.webp"
-                    alt="Kitchen backsplash installation"
+                    alt="Kitchen tile installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -329,7 +329,7 @@ export default function HomePage() {
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
                     src="/works/bathroom2.webp"
-                    alt="Living room floor tiling"
+                    alt="Bathroom tile installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -337,7 +337,7 @@ export default function HomePage() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
                     src="/works/bathroom3.webp"
-                    alt="Outdoor patio tiling"
+                    alt="Bathroom tile installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -348,7 +348,7 @@ export default function HomePage() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
                     src="/works/shower.webp"
-                    alt="Luxury bathroom renovation"
+                    alt="Luxury shower tile installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
@@ -356,7 +356,7 @@ export default function HomePage() {
                 <div className="relative aspect-square overflow-hidden rounded-lg">
                   <Image
                     src="/works/bathroom4.webp"
-                    alt="Shower renovation with mosaic tiles"
+                    alt="Bathroom tile installation"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                   />
