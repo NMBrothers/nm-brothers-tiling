@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import { BotIdClient } from "botid/client";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FloatingActionButtons from "@/components/floating-action-buttons";
@@ -11,6 +12,13 @@ export const metadata: Metadata = {
   description: "N&M Brothers Tiling",
   generator: "N&M Brothers Tiling",
 };
+
+const protectedRoutes = [
+  {
+    path: "/api/contact",
+    method: "POST",
+  },
+];
 
 export default function RootLayout({
   children,
@@ -27,6 +35,7 @@ html {
   --font-mono: ${GeistMono.variable};
 }
         `}</style>
+        <BotIdClient protect={protectedRoutes} />
       </head>
       <body>
         <div className="flex flex-col min-h-screen bg-white">

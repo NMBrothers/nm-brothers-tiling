@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { checkBotId } from "botid/server";
 import { contactFormSchema } from "@/lib/contact-form-schema";
 import { contactFormRateLimiter } from "@/lib/rate-limiter";
 
@@ -16,6 +17,19 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(request: NextRequest) {
   try {
+    // Check for bots first using BotID
+    const verification = await checkBotId();
+
+    if (verification.isBot) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Access denied. Bot activity detected.",
+        },
+        { status: 403 }
+      );
+    }
+
     // Get client IP for rate limiting
     const forwarded = request.headers.get("x-forwarded-for");
     const ip = forwarded ? forwarded.split(",")[0] : "unknown";
