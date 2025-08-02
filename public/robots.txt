@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nmbrotherstilers.com/sitemap.xml
+
+# Block admin areas
+Disallow: /api/
+Disallow: /_next/

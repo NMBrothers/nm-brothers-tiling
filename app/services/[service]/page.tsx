@@ -207,8 +207,40 @@ export async function generateMetadata({ params }: ServicePageProps) {
     };
   }
 
+  const metadataConfig = {
+    "bathroom-tiling": {
+      title: "Bathroom Tiling Cape Town | Waterproof Tiling Experts",
+      description:
+        "Expert bathroom tiling services in Cape Town. Waterproof solutions, modern designs, premium finishes. Over 10 years experience. Free quotes available.",
+      keywords:
+        "bathroom tiling Cape Town, waterproof tiling, bathroom renovation, shower tiling, tile installation Cape Town",
+    },
+    "kitchen-tiling": {
+      title: "Kitchen Tiling Cape Town | Backsplash & Floor Tiling",
+      description:
+        "Professional kitchen tiling services in Cape Town. Backsplash installation, floor tiling, modern designs. 10+ years experience. Free consultation.",
+      keywords:
+        "kitchen tiling Cape Town, backsplash installation, kitchen renovation, countertop tiling, kitchen floor tiles",
+    },
+    "floor-tiling": {
+      title: "Floor Tiling Cape Town | Residential & Commercial",
+      description:
+        "Expert floor tiling services in Cape Town. Residential and commercial installations. Porcelain, ceramic & natural stone. Premium materials, professional finish.",
+      keywords:
+        "floor tiling Cape Town, tile flooring, commercial tiling, porcelain tiles, ceramic floor installation",
+    },
+  };
+
+  const config = metadataConfig[serviceSlug as keyof typeof metadataConfig];
+
   return {
-    title: `${service.title} | NM Brothers Tiling`,
-    description: service.description,
+    title: config.title,
+    description: config.description,
+    keywords: config.keywords,
+    openGraph: {
+      title: config.title,
+      description: config.description,
+      url: `https://nmbrotherstilers.com/services/${serviceSlug}`,
+    },
   };
 }
